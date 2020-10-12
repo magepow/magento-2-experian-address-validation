@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <magepow_experianaddressvalidation>
+            <experian_address_validation>
+                <active>1</active>
+                <experian_api_key>dfe1d067-88ba-498d-b9eb-7c3b51fe44f0</experian_api_key>
+                <country_ip>AU,US</country_ip>
+            </experian_address_validation>
+        </magepow_experianaddressvalidation>
+    </default>
+</config>

@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Magepow_ExperianAddressValidation::address_validation" title="Address Validation" translate="title" module="Magepow_ExperianAddressValidation" sortOrder="10" resource="Magepow_ExperianAddressValidation::address_validation" />
+        <add id="Magepow_ExperianAddressValidation::configuration" title="Configuration" module="Magepow_ExperianAddressValidation" sortOrder="20" action="adminhtml/system_config/edit/section/experian_address_validation" resource="Magepow_ExperianAddressValidation::configuration" parent="Magepow_ExperianAddressValidation::address_validation"/>
+    </menu>
+</config>

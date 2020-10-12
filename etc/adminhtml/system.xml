@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="magepow" translate="label" sortOrder="1">
+            <label>Experian Address Validation</label>
+        </tab>
+        <section id="magepow_experianaddressvalidation" translate="label" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Experian Address Validation</label>
+            <tab>Magepow</tab>
+            <resource>Magepow_ExperianAddressValidation::configuration</resource>
+            <group id="experian_address_validation" translate="label" type="text" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Experian Address Validation</label>
+                <field id="active" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1"
+                       showInStore="1">
+                    <label>Enabled</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="experian_api_key" translate="label" sortOrder="120" showInDefault="1" showInWebsite="1"
+                       showInStore="1">
+                    <label>Token API Key</label>
+                    <comment>You need to get your token Api Key from the website https://www.experian.com.au/</comment>
+                </field>
+                <field id="country_ip" type="multiselect" translate="label" sortOrder="130" showInDefault="1" showInWebsite="1"
+                           showInStore="1" canRestore="1">
+                    <label>Country</label>
+                    <source_model>Magepow\ExperianAddressValidation\Model\Source\Config\Config</source_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

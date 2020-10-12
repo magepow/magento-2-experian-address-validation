@@ -1,0 +1,48 @@
+.address-picklist {
+    background-color: white;
+    border: 2px solid #632678;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    box-sizing: border-box;
+    max-height: 206px;
+    overflow: auto;
+    overflow-x: hidden;
+    padding: 0;
+}
+.address-picklist div, .use-address-entered {
+    color: black;
+    font-size: 14px;
+    line-height: 1.4;
+    padding: 5px 11px;
+    border-bottom:1px solid #ccc;
+}
+.style-address{
+    color: #000000;
+    float: right;
+    padding: 0px 5px;
+    margin: 5px 0px;
+    text-align: center;
+    font-size: 12px;
+}
+.style-address a{
+    color: #000000;
+}
+
+.fieldset .city, .zip, .region{
+    display: none;
+}
+.clear-street,.show-filladdress,.hide-filladdress{
+    font-weight: bold;
+    float: right;
+    background: #cccbca;
+    padding: 0px 5px;
+    margin: 10px 0px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.hide-filladdress, .hide-address{
+    display: none;
+}
+.hidden{
+    display: none;
+}
