@@ -20,6 +20,7 @@ define([
         var apiKey =  window.checkoutConfig.magepow_experianaddressvalidation.api_key;
         var countryIp =  window.checkoutConfig.magepow_experianaddressvalidation.country_ip;
         var countryDomID    = uiRegistry.get('checkout.steps.shipping-step.shippingAddress.shipping-address-fieldset.country_id').uid;
+        var street0    = uiRegistry.get('checkout.steps.shipping-step.shippingAddress.shipping-address-fieldset.street.0').uid;
         var cityDomID       = uiRegistry.get('checkout.steps.shipping-step.shippingAddress.shipping-address-fieldset.city').uid;
         var postcodeDomID   = uiRegistry.get('checkout.steps.shipping-step.shippingAddress.shipping-address-fieldset.postcode').uid;
         var regionDomId     = uiRegistry.get('checkout.steps.shipping-step.shippingAddress.shipping-address-fieldset.region_id').uid;
@@ -54,7 +55,11 @@ define([
                 postalCode:   document.querySelector("input[name='street[0]']")
             }
         };
+    
         var address = window.ContactDataServices.address(options);
+
+        
+
         var checkShipping    = document.querySelector("#shipping-new-address-form");
         checkShipping.style.display = "flex";
         checkShipping.style.flexDirection  = "column";
@@ -101,6 +106,11 @@ define([
             let cityEAV    = fillCity[fillCity.length -3];
             let regionEAV  = fillCity[fillCity.length -2];
             let fillcode   = fillCity[fillCity.length -1];
+            let addresstext = text.indexOf(",");
+            let addressStreet = text.slice(0, addresstext);
+            $('#'+street0).val(addressStreet);
+            $('#'+street0).trigger('change');
+            console.log($('#'+street0).val());
             $('#'+cityDomID).val(cityEAV);
             $('#'+cityDomID).trigger('change');
             $('#'+postcodeDomID).val(fillcode);
