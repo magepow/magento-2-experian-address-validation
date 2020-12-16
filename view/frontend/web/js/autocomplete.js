@@ -16,11 +16,13 @@ define([
 ) {
 
     setTimeout(function () {
-
+        var datahelper = window.checkoutConfig.magepow_experianaddressvalidation.active;
+        if (!datahelper) return;
         var apiKey =  window.checkoutConfig.magepow_experianaddressvalidation.api_key;
         var countryIp =  window.checkoutConfig.magepow_experianaddressvalidation.country_ip;
+        var countryArray = countryIp.split(/[\s,]+/);
+        var street0         = uiRegistry.get('checkout.steps.shipping-step.shippingAddress.shipping-address-fieldset.street.0').uid;
         var countryDomID    = uiRegistry.get('checkout.steps.shipping-step.shippingAddress.shipping-address-fieldset.country_id').uid;
-        var street0    = uiRegistry.get('checkout.steps.shipping-step.shippingAddress.shipping-address-fieldset.street.0').uid;
         var cityDomID       = uiRegistry.get('checkout.steps.shipping-step.shippingAddress.shipping-address-fieldset.city').uid;
         var postcodeDomID   = uiRegistry.get('checkout.steps.shipping-step.shippingAddress.shipping-address-fieldset.postcode').uid;
         var regionDomId     = uiRegistry.get('checkout.steps.shipping-step.shippingAddress.shipping-address-fieldset.region_id').uid;
@@ -30,7 +32,6 @@ define([
 
         var search_input = document.querySelector("input[name='street[0]']");
         var countryMap = {"AU":"AUS;DataFusion","US": "USA"};
-        var countryArray = countryIp.split(/[\s,]+/);
         $('#'+countryDomID).on('change', function (){
             var countryValue = $(this).val();
             if (countryArray.indexOf(countryValue) != -1){
@@ -55,11 +56,7 @@ define([
                 postalCode:   document.querySelector("input[name='street[0]']")
             }
         };
-    
         var address = window.ContactDataServices.address(options);
-
-        
-
         var checkShipping    = document.querySelector("#shipping-new-address-form");
         checkShipping.style.display = "flex";
         checkShipping.style.flexDirection  = "column";
@@ -110,7 +107,6 @@ define([
             let addressStreet = text.slice(0, addresstext);
             $('#'+street0).val(addressStreet);
             $('#'+street0).trigger('change');
-            console.log($('#'+street0).val());
             $('#'+cityDomID).val(cityEAV);
             $('#'+cityDomID).trigger('change');
             $('#'+postcodeDomID).val(fillcode);

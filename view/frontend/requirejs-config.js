@@ -4,7 +4,7 @@ var config = {
             dataservices: 'Magepow_ExperianAddressValidation/js/datasetservices'
         },
         paths: {
-            'magepow/dataservices': 'Magepow_ExperianAddressValidation/js/datasetservices',
+            'av/dataservices': 'Magepow_ExperianAddressValidation/js/datasetservices',
         },
         shim: {
             dataservices: {

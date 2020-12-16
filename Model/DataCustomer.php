@@ -19,7 +19,7 @@ class DataCustomer implements ConfigProviderInterface
         $config['magepow_experianaddressvalidation'] = [
             'active'            => $this->helper->getStoreConfig('magepow_experianaddressvalidation/experian_address_validation/active'),
             'api_key'           => $this->helper->getStoreConfig('magepow_experianaddressvalidation/experian_address_validation/experian_api_key'),
-            'country_ip'        => $this->helper->getStoreConfig('magepow_experianaddressvalidation/experian_address_validation/country_ip'),
+            'country_ip'         => $this->helper->getStoreConfig('magepow_experianaddressvalidation/experian_address_validation/country_ip'),
         ];
         return $config;
     }

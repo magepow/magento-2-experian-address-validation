@@ -149,6 +149,9 @@
         }
     }
 </script>
+<?php $helper         = $this->helper('Magepow\ExperianAddressValidation\Helper\Data');
+if (!$helper->IsActive()) return;
+ ?>
 <script>
 
      function fillInAddress() {
