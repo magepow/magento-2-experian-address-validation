@@ -1,6 +1,8 @@
 ## Magento2 Experian Address Validation SEO
 ### Details
- - Experian's integrated location search module
+  - In the age of information technology increasingly developing, online business gradually becomes the main business form of stores and businesses. One of the most important issues affecting customer satisfaction when doing business online today is shipping.It is common to incorrectly write the wrong shipping address or postal code when typing in shipping address forms. Therefore, order packages may be shipped to the wrong address or lost on the way to the customer. This incident has a very serious impact on your business, it both causes high shipping costs and makes customers unhappy because of waiting too long.
+
+Therefore, Magepow has created Magento 2 Experian Address Validation Extension to help you solve this problem.
 
 ### Description
  - Magepow's Magento 2 Experian Address Validation is an Address Validation Extension using Experian's data (see also: https://www.experian.com.au/address-validation or https://docs.experianaperture.io/more/contact-support/).
