@@ -6,7 +6,7 @@
         </tab>
         <section id="magepow_experianaddressvalidation" translate="label" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="1">
             <class>separator-top</class>
-            <label>Experian Address Validation</label>
+            <label>Magepow</label>
             <tab>magepow</tab>
             <resource>Magepow_ExperianAddressValidation::configuration</resource>
             <group id="experian_address_validation" translate="label" type="text" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="1">
