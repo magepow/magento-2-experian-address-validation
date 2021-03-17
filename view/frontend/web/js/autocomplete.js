@@ -17,7 +17,8 @@ define([
 
     setTimeout(function () {
         var datahelper = window.checkoutConfig.magepow_experianaddressvalidation.active;
-        if (!datahelper) return;
+       // if (!datahelper) return;
+        if (datahelper == 0) return;
         var apiKey =  window.checkoutConfig.magepow_experianaddressvalidation.api_key;
         var countryIp =  window.checkoutConfig.magepow_experianaddressvalidation.country_ip;
         var countryArray = countryIp.split(/[\s,]+/);
