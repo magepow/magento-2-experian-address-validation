@@ -1,5 +1,5 @@
 {
-    "name": "magepow/experian-address-validation",
+    "name": "magepow/experianaddressvalidation",
     "description": "Change the price of the product as desired.",
     "require": {
         "magepow/core": "^1.0.0"
