@@ -19,6 +19,10 @@ Therefore, Magepow has created Magento 2 Experian Address Validation Extension t
  - Enhance the shoppers’ experience of your online checkout.
  - Easy to use.
 
+[![Latest Stable Version](https://poser.pugx.org/magepow/experianaddressvalidation/v/stable)](https://packagist.org/packages/magepow/experianaddressvalidation)
+[![Total Downloads](https://poser.pugx.org/magepow/experianaddressvalidation/downloads)](https://packagist.org/packages/magepow/experianaddressvalidation)
+[![Daily Downloads](https://poser.pugx.org/magepow/experianaddressvalidation/d/daily)](https://packagist.org/packages/magepow/experianaddressvalidation)
+
 ### I : Download Magento 2 Experian Address Validation Extension
 ✓ Install Magepow Experian Address Validation via composer (recommend)
 
