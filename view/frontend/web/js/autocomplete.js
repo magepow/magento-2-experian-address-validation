@@ -32,7 +32,7 @@ define([
         $("input[name='street[1]'], input[name='street[2]']").hide();
 
         var search_input = document.querySelector("input[name='street[0]']");
-        var countryMap = {"AU":"AUS;DataFusion","US": "USA"};
+        var countryMap = {"AU":"AUS;DataFusion","US": "USA","NZ": "NZL"};
         $('#'+countryDomID).on('change', function (){
             var countryValue = $(this).val();
             if (countryArray.indexOf(countryValue) != -1){
