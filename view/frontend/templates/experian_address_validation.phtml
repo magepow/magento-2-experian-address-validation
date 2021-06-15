@@ -275,7 +275,7 @@ if (!$helper->IsActive()) return;
          }
      }
      require(['jquery', 'dataservices'], function($) {
-         var countryMap = {"AU":"AUS;DataFusion","US": "USA"};
+         var countryMap = {"AU":"AUS;DataFusion","US": "USA", "NZ": "NZL"};
          var countryIpAdmin  = '<?php echo $block->getConfig('magepow_experianaddressvalidation/experian_address_validation/country_ip')?>';
           var countryArray = countryIpAdmin.split(/[\s,]+/);
        $("#country").on('change', function (){
